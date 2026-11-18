@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | Inventaris SMK</title>
+    <link rel="icon" type="image/svg+xml" href="{{ asset('assets/img/logo.svg') }}">
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0d6efd 0%, #0a3d91 100%);
+        }
+        .kartu-login { width: 100%; max-width: 400px; border-radius: 1rem; }
+        .logo-login { width: 84px; height: 84px; filter: drop-shadow(0 6px 14px rgba(13, 110, 253, .35)); }
+    </style>
+</head>
+<body class="d-flex align-items-center justify-content-center p-3">
+
+<div class="card shadow-lg border-0 kartu-login">
+    <div class="card-body p-4 p-md-5">
+        <div class="text-center mb-4">
+            <img src="{{ asset('assets/img/logo.svg') }}" alt="Logo Inventaris SMK" class="logo-login mb-3">
+            <h4 class="fw-bold mb-1">Inventaris SMK</h4>
+            <div class="text-muted">Sarana &amp; Prasarana</div>
+            <small class="text-muted">Login khusus petugas</small>
+        </div>
+
+        @if (session('success'))
+            <div class="alert alert-success py-2">{{ session('success') }}</div>
+        @endif
+
+        <form method="POST" action="{{ route('login.proses') }}">
+            @csrf
+
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" name="username"
+                       class="form-control @error('username') is-invalid @enderror"
+                       value="{{ old('username') }}" autofocus>
+                @error('username')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password"
+                       class="form-control @error('password') is-invalid @enderror">
+                @error('password')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                <label class="form-check-label" for="remember">Ingat saya</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+    </div>
+</div>
+
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

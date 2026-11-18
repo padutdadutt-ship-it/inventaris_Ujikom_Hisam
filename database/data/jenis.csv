@@ -1,0 +1,130 @@
+kode_jenis,nama_jenis,keterangan
+2-01,Akrilik Nama,Kategori: Perabotan
+2-02,Filling cabinet,Kategori: Perabotan
+2-03,Kursi Guru,Kategori: Perabotan
+2-04,Kursi Rapat,Kategori: Perabotan
+2-05,Kursi siswa,Kategori: Perabotan
+2-06,Lemari Alat Bahan,Kategori: Perabotan
+2-07,Lemari Arsip,Kategori: Perabotan
+2-08,Loker Guru,Kategori: Perabotan
+2-09,Meja Guru,Kategori: Perabotan
+2-10,Meja Kerja,Kategori: Perabotan
+2-11,Meja Komputer,Kategori: Perabotan
+2-12,Meja Produksi,Kategori: Perabotan
+2-13,Meja Rapat,Kategori: Perabotan
+2-14,Meja Siswa,Kategori: Perabotan
+2-15,Papan Pengumuman,Kategori: Perabotan
+2-16,papan tulis,Kategori: Perabotan
+2-17,Rak Piala,Kategori: Perabotan
+2-18,Sofa Tamu,Kategori: Perabotan
+2-19,Tong Sampah,Kategori: Perabotan
+2-20,Ranjang dan kasur,Kategori: Perabotan
+2-21,Sapu,Kategori: Perabotan
+2-22,Lap pel,Kategori: Perabotan
+3-01,Interactive Flat Panel,Kategori: Elektronik
+3-02,AC,Kategori: Elektronik
+3-03,CCTV,Kategori: Elektronik
+3-04,Dispenser,Kategori: Elektronik
+3-05,Kipas Angin/ Exhaust fan,Kategori: Elektronik
+3-06,Layar Proyektor,Kategori: Elektronik
+3-07,Mesin Fotokopi,Kategori: Elektronik
+3-08,Microphone,Kategori: Elektronik
+3-09,Mixer Suara,Kategori: Elektronik
+3-10,Printer,Kategori: Elektronik
+3-11,Proyektor/Infokus,Kategori: Elektronik
+3-12,Scanner,Kategori: Elektronik
+3-13,Telepon Kantor,Kategori: Elektronik
+3-14,TV,Kategori: Elektronik
+3-15,Sound Sistem,Kategori: Elektronik
+3-16,Ampli Gitar,Kategori: Elektronik
+3-17,Speaker Portable,Kategori: Elektronik
+3-18,Handphone,Kategori: Elektronik
+3-19,Speaker Kecil,Kategori: Elektronik
+3-20,Terminal stop kontak,Kategori: Elektronik
+4-01,Komputer Akuntansi,Kategori: Alat Praktik/Lab
+4-02,Komputer Animasi,Kategori: Alat Praktik/Lab
+4-03,Komputer DKV,Kategori: Alat Praktik/Lab
+4-04,Komputer Pemasaran,Kategori: Alat Praktik/Lab
+4-05,Komputer PPLG 1,Kategori: Alat Praktik/Lab
+4-06,Komputer PPLG 2,Kategori: Alat Praktik/Lab
+4-07,Komputer PPLG 3,Kategori: Alat Praktik/Lab
+4-08,Komputer PPLG 4,Kategori: Alat Praktik/Lab
+4-09,Komputer PPLG 5,Kategori: Alat Praktik/Lab
+4-10,LapTop,Kategori: Alat Praktik/Lab
+4-11,Mesin Cutting,Kategori: Alat Praktik/Lab
+4-12,Mesin Laminasi,Kategori: Alat Praktik/Lab
+4-13,Mesin Oven,Kategori: Alat Praktik/Lab
+4-14,Mesin Pres,Kategori: Alat Praktik/Lab
+4-15,Printer 3D,Kategori: Alat Praktik/Lab
+4-16,Printer DTF,Kategori: Alat Praktik/Lab
+4-17,Printer Foto,Kategori: Alat Praktik/Lab
+4-18,Printer Sublim,Kategori: Alat Praktik/Lab
+4-19,Printer UV,Kategori: Alat Praktik/Lab
+4-20,Stabilizer/ PSU,Kategori: Alat Praktik/Lab
+4-21,Stand Lighting,Kategori: Alat Praktik/Lab
+4-22,Stand Microphone,Kategori: Alat Praktik/Lab
+4-23,Tripod Camera,Kategori: Alat Praktik/Lab
+4-24,Kamera MD 1000,Kategori: Alat Praktik/Lab
+4-25,Tripod Kamera,Kategori: Alat Praktik/Lab
+4-26,Soft Box Standar,Kategori: Alat Praktik/Lab
+4-27,Lampu LED,Kategori: Alat Praktik/Lab
+4-28,Tripod Kecil,Kategori: Alat Praktik/Lab
+4-29,Tuled + Bracket,Kategori: Alat Praktik/Lab
+4-30,Background Hijau,Kategori: Alat Praktik/Lab
+4-31,Lampu Sorot,Kategori: Alat Praktik/Lab
+4-32,Komputer Lab Broadcast,Kategori: Alat Praktik/Lab
+4-33,Audio Mixer,Kategori: Alat Praktik/Lab
+4-34,Video Mixer,Kategori: Alat Praktik/Lab
+4-35,Rekording Pack,Kategori: Alat Praktik/Lab
+4-36,Speaker,Kategori: Alat Praktik/Lab
+4-37,Telepromter,Kategori: Alat Praktik/Lab
+4-38,Mic Wireless,Kategori: Alat Praktik/Lab
+4-39,Kamera Mirorrless,Kategori: Alat Praktik/Lab
+4-40,Drone,Kategori: Alat Praktik/Lab
+4-41,kamera Digital,Kategori: Alat Praktik/Lab
+4-42,Oculus,Kategori: Alat Praktik/Lab
+4-43,Lampu Sorot,Kategori: Alat Praktik/Lab
+4-44,Lampu Studi,Kategori: Alat Praktik/Lab
+4-45,Kamera DSRL,Kategori: Alat Praktik/Lab
+4-46,Kamera DSRL,Kategori: Alat Praktik/Lab
+4-47,Kamera DSRL,Kategori: Alat Praktik/Lab
+4-48,Lensa,Kategori: Alat Praktik/Lab
+4-49,Lensa,Kategori: Alat Praktik/Lab
+4-50,Lensa,Kategori: Alat Praktik/Lab
+4-51,Lampu Studio,Kategori: Alat Praktik/Lab
+4-52,Flash,Kategori: Alat Praktik/Lab
+4-53,Background,Kategori: Alat Praktik/Lab
+4-54,Tripod Besar,Kategori: Alat Praktik/Lab
+4-55,Soft Box Besar,Kategori: Alat Praktik/Lab
+4-56,Soft Box Sedang,Kategori: Alat Praktik/Lab
+4-57,Komputer Mac,Kategori: Alat Praktik/Lab
+4-58,Printer Foto,Kategori: Alat Praktik/Lab
+4-59,hub switch,Kategori: Alat Praktik/Lab
+4-60,Haedphone,Kategori: Alat Praktik/Lab
+4-61,Pan Tablet,Kategori: Alat Praktik/Lab
+4-62,Server,Kategori: Alat Praktik/Lab
+4-63,Access Point,Kategori: Alat Praktik/Lab
+4-64,Kalkulator,Kategori: Alat Praktik/Lab
+4-65,Mesin Kasir,Kategori: Alat Praktik/Lab
+4-66,meja cetak sablon,Kategori: Alat Praktik/Lab
+4-67,Alat Cetak Pin,Kategori: Alat Praktik/Lab
+4-68,Alat Cetak Mug,Kategori: Alat Praktik/Lab
+4-69,Alat musik,Kategori: Alat Praktik/Lab
+4-70,Kendang,Kategori: Alat Praktik/Lab
+4-71,Gamelan Degung Pelog selap Salendro,Kategori: Alat Praktik/Lab
+4-72,Angklung Melodi,Kategori: Alat Praktik/Lab
+4-73,Angklung Bass Partay,Kategori: Alat Praktik/Lab
+4-74,Accompanyemen,Kategori: Alat Praktik/Lab
+4-75,Cuk,Kategori: Alat Praktik/Lab
+4-76,Bass Pukul,Kategori: Alat Praktik/Lab
+4-77,Gambang Pengiring,Kategori: Alat Praktik/Lab
+4-78,Drum,Kategori: Alat Praktik/Lab
+4-79,Gitar Akustik,Kategori: Alat Praktik/Lab
+4-80,Gitar Bass,Kategori: Alat Praktik/Lab
+4-81,Matras,Kategori: Alat Praktik/Lab
+4-82,Bola Voli,Kategori: Alat Praktik/Lab
+4-83,Bola Basket,Kategori: Alat Praktik/Lab
+4-84,Bola Futsal,Kategori: Alat Praktik/Lab
+4-85,Net Voli,Kategori: Alat Praktik/Lab
+4-86,Net Badminton,Kategori: Alat Praktik/Lab
+4-87,Stik Kasti,Kategori: Alat Praktik/Lab

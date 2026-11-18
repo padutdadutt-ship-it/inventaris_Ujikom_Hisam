@@ -1,0 +1,49 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Inventaris;
+use App\Models\Jenis;
+use App\Models\Ruang;
+use Illuminate\Http\Request;
+
+class LaporanBarangDipinjamController extends Controller
+{
+    public function index(Request $request)
+    {
+        $cetak = $request->boolean('cetak');
+
+        $query = Inventaris::with(['jenis', 'ruang'])
+            ->whereHas('detailPinjam')
+            ->withCount('detailPinjam as kali_dipinjam')
+            ->withSum('detailPinjam as total_unit', 'jumlah')
+            ->withSum(['detailPinjam as sedang_dipinjam' => function ($d) {
+                $d->whereHas('peminjaman', function ($p) {
+                    $p->where('status_peminjaman', 'Dipinjam');
+                });
+            }], 'jumlah');
+
+        if ($request->filled('id_jenis')) {
+            $query->where('id_jenis', $request->id_jenis);
+        }
+        if ($request->filled('id_ruang')) {
+            $query->where('id_ruang', $request->id_ruang);
+        }
+        if ($request->filled('kondisi')) {
+            $query->where('kondisi', $request->kondisi);
+        }
+
+        $data = $query->orderBy('kode_inventaris')->get();
+
+        return view('laporan.barang-dipinjam', [
+            'cetak'         => $cetak,
+            'data'          => $data,
+            'daftarJenis'   => Jenis::orderBy('nama_jenis')->get(),
+            'daftarRuang'   => Ruang::orderBy('nama_ruang')->get(),
+            'daftarKondisi' => Inventaris::select('kondisi')->distinct()->orderBy('kondisi')->pluck('kondisi'),
+            'totalKali'     => $data->sum('kali_dipinjam'),
+            'totalUnit'     => (int) $data->sum('total_unit'),
+            'totalSedang'   => (int) $data->sum('sedang_dipinjam'),
+        ]);
+    }
+}

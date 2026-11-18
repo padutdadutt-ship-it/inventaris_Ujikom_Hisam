@@ -1,0 +1,63 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\PeminjamanRuang;
+use App\Models\Ruang;
+use Illuminate\Http\Request;
+
+class PeminjamanRuangController extends Controller
+{
+    public function index(Request $request)
+    {
+        $status = $request->query('status');
+
+        $query = PeminjamanRuang::with('ruang')
+            ->orderByDesc('tanggal')
+            ->orderByDesc('jam_mulai');
+
+        if ($status) {
+            $query->where('status', $status);
+        }
+
+        $data = $query->get();
+
+        return view('peminjaman_ruang.index', compact('data', 'status'));
+    }
+
+    public function create()
+    {
+        $ruang = Ruang::orderBy('nama_ruang')->get();
+
+        return view('peminjaman_ruang.create', compact('ruang'));
+    }
+
+    public function store(Request $request)
+    {
+        $valid = $request->validate([
+            'id_ruang'      => 'required',
+            'nama_peminjam' => 'required|string|max:255',
+            'keperluan'     => 'required|string|max:255',
+            'tanggal'       => 'required|date',
+            'jam_mulai'     => 'required',
+            'jam_selesai'   => 'required',
+        ]);
+
+        $valid['status'] = 'Dipinjam';
+        $valid['dicatat_oleh'] = auth()->user()->nama_petugas;
+
+        PeminjamanRuang::create($valid);
+
+        return redirect()->route('peminjaman-ruang.index')
+            ->with('success', 'Peminjaman ruangan berhasil dicatat.');
+    }
+
+    public function selesai($id)
+    {
+        $p = PeminjamanRuang::findOrFail($id);
+        $p->update(['status' => 'Selesai']);
+
+        return redirect()->route('peminjaman-ruang.index')
+            ->with('success', 'Peminjaman ruangan ditandai selesai.');
+    }
+}
